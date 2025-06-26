@@ -2312,7 +2312,8 @@ header#header { position: relative; z-index: 99; }
 .slicknav_btn .slicknav_icon:before, .slicknav_btn .slicknav_icon:after { -webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s; transition-duration: 0.3s, 0.3s; -webkit-transition-delay: .3s, 0s; -moz-transition-delay: .3s, 0s; transition-delay: .3s, 0s; }
 .slicknav_btn .slicknav_icon:before { -webkit-transition-property: top, transform; -moz-transition-property: top, transform; -webkit-transition-property: top, -webkit-transform; transition-property: top, -webkit-transform; -moz-transition-property: top, transform, -moz-transform; transition-property: top, transform; transition-property: top, transform, -webkit-transform, -moz-transform; }
 .slicknav_btn .slicknav_icon:after { -webkit-transition-property: bottom, transform; -moz-transition-property: bottom, transform; -webkit-transition-property: bottom, -webkit-transform; transition-property: bottom, -webkit-transform; -moz-transition-property: bottom, transform, -moz-transform; transition-property: bottom, transform; transition-property: bottom, transform, -webkit-transform, -moz-transform; }
-/* active state, i.e. menu open Start*/
+
+
 .slicknav_btn.slicknav_open .slicknav_icon { background: none; }
 .slicknav_btn.slicknav_open .slicknav_icon:before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 .slicknav_btn.slicknav_open .slicknav_icon:after { bottom: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
@@ -2349,6 +2350,13 @@ a.slicknav_btn .slicknav_icon-bar:first-child { -webkit-transform: rotate(0); -m
 a.slicknav_btn.slicknav_open .slicknav_icon-bar { opacity: 0; visibility: hidden; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 a.slicknav_btn.slicknav_open .slicknav_icon-bar:last-child { position: absolute; bottom: 13px; left: 7px; opacity: 1; visibility: visible; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
 a.slicknav_btn.slicknav_open .slicknav_icon-bar:first-child { position: absolute; top: 14px; right: 8px; visibility: visible; opacity: 1; width: 1.12em; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+/* style.css */
+a.slicknav_btn.slicknav_collapsed {
+    background-color:#007aff !important;
+    color: white !important;
+    font-size: 18px !important;
+}
+
 /*Responsive Menu Style End*/
 .transparent-header .wide .col-lg-8 { width: 45%; }
 .transparent-header .wide .col-lg-4 { width: 55%; }
@@ -2399,7 +2407,7 @@ a.slicknav_btn.slicknav_open .slicknav_icon-bar:first-child { position: absolute
 .transparent-header .main-header .login-option a.get-start-btn { background-color: #eb6825; border: solid 1px transparent; }
 .transparent-header .main-header .login-option a.get-start-btn:hover { background-color: #FFFFFF !important; }
 .transparent-header .main-header .main-navigation > ul > li > a { padding: 19px 24px; }
-.transparent-header .main-header .login-option a.get-start-btn { margin: 0 0 0 25px; }
+.transparent-header .main-header .login-option a.get-start-btn { margin: 0 0 0 50px; }
 .transparent-header .main-location > ul > li > a { color: #fff; }
 .transparent-header .main-location > ul > li.location-has-children.menu-open > a { color: #999; }
 /*Transparent Header Style End*/
