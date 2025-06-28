@@ -1,0 +1,9 @@
+vendor class
+
+user - OneToOneField
+user profile - OneToOneField
+vendor name or shop name
+license
+is_approved
+created_at
+modified_at
