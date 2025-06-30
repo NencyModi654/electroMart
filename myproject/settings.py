@@ -70,6 +70,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
+# AUTHENTICATION_BACKENDS = ['accounts.backends.EmailBackend']
+
+
 
 
 # Database
